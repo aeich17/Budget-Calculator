@@ -14,6 +14,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.scene.control.ChoiceBox;
+
 
 
 public class EmployeeController implements Initializable {
@@ -33,6 +35,24 @@ public class EmployeeController implements Initializable {
 
     @FXML
     private VBox menuSide;
+    
+    @FXML
+    private TextField hours;
+
+    @FXML
+    private VBox menuSide;
+
+    @FXML
+    private TextField name;
+
+    @FXML
+    private Button removeEmployee;
+
+    @FXML
+    private TextField salaryWage;
+
+    @FXML
+    private ChoiceBox<?> wageType;
 
 
     @Override
