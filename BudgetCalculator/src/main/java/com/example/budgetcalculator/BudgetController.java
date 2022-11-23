@@ -64,11 +64,17 @@ public class BudgetController implements Initializable {
             userRevenue.requestFocus();
         }
     }
-
-
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+    }
+    
+    public void changeSceneBtn1() throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("Employees.fxml"));
+        Stage window = (Stage) homeNext.getScene().getWindow();
+        window.setScene(new Scene(root));
     }
 
 
