@@ -52,12 +52,12 @@ public class EmployeeController implements Initializable {
     private TextField salaryWage;
 
     @FXML
-    private ChoiceBox<?> wageType;
+    private ChoiceBox<String> wageType;
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        wageType.getItems().addAll("Salary", "Hourly");
     }
     
     public void changeSceneBtn2() throws Exception {
