@@ -1,3 +1,5 @@
+package com.example.budgetcalculator;
+
 public class menu {
     public double userRevenue;
     public double userTaxRate;
