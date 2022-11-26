@@ -59,5 +59,11 @@ public class EmployeeController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+    
+    public void changeSceneBtn2() throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("Area.fxml"));
+        Stage window = (Stage) employeeNext.getScene().getWindow();
+        window.setScene(new Scene(root));
+    }
 
 }
