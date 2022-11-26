@@ -1,4 +1,4 @@
-package com.example.fake;
+package com.example.budgetcalculator;
 
 public class Area {
     private double percentage;
