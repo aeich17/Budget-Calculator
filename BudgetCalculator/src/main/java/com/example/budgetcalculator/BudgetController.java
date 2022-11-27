@@ -38,17 +38,19 @@ public class BudgetController implements Initializable {
     private Button homeNext;
 
     @FXML
-    private VBox menuSide;
-
-    @FXML
     private TextField userRevenue;
 
     @FXML
     private TextField userTaxRate;
 
+    
+    
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
-    @FXML
-    private void calculateAfterTax(ActionEvent event) {
+    }
+    
+    public void changeSceneBtn1() throws Exception {
         int revenue, tax, tax1, afterTaxRevenue;
 
         try {
@@ -63,15 +65,8 @@ public class BudgetController implements Initializable {
             userTaxRate.setText("Enter percentage");
             userRevenue.requestFocus();
         }
-    }
-    
-    
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
-    
-    public void changeSceneBtn1() throws Exception {
+        
+        
         Parent root = FXMLLoader.load(getClass().getResource("Employees.fxml"));
         Stage window = (Stage) homeNext.getScene().getWindow();
         window.setScene(new Scene(root));
