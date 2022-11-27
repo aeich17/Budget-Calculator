@@ -3,12 +3,13 @@
 
 package com.example.budgetcalculator;
 
-public class menu {
-    public double userRevenue;
-    public double userTaxRate;
 
-    public menu(double userRevenue, double userTaxRate) {
-        this.userTaxRate = userTaxRate;
+public class Menu {
+    public double userRevenue;
+    public double userAfterTax;
+
+    public Menu(double userRevenue, double userTaxRate) {
+        this.userAfterTax = userAfterTax;
         this.userRevenue = userRevenue;
     }
 
@@ -18,10 +19,11 @@ public class menu {
     public double getUserRevenue() {
         return userRevenue;
     }
-    public void setUserTaxRate() {
-        userTaxRate = this.userTaxRate;
+    public void setUserAfterTax() {
+        userAfterTax = this.userAfterTax;
     }
-    public double getUserTaxRate() {
-        return userTaxRate;
+    public double getUserAfterTax() {
+        return userAfterTax;
     }
 }
+
