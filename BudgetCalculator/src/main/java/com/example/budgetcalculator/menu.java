@@ -1,3 +1,6 @@
+// Menu Class
+// Purpose: Is used to store userTaxRate and userRevenue in an instance of the class. Contains getter and setter methods.
+
 package com.example.budgetcalculator;
 
 public class menu {
