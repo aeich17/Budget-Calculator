@@ -1,4 +1,7 @@
-
+/** Group Members: Ej Boakye, Adam Eichman, Michel Emborsky, Jake Ferner, Hunter Uebelacker * Date: 11/27/2022
+* Section: CSC 331 * Purpose: BudgetController is the controller for the BudgetCalculatorHome.fxml. It deals with all the actions that take place
+* within that scene. This scene includes buttons and textfields. There are two text fields that collect user inputted data.
+* The changeSceneBtn1 method changes the scene to the Employees.fxml file. Throws an exception if file is not found or does not exist. */
 package com.example.budgetcalculator;
 
 import javafx.fxml.FXML;
