@@ -1,7 +1,10 @@
-package com.example.businesscalculator;
+package com.example.budgetcalculator;
 
 abstract public class Employee {
+
     private String name;
+    protected double wage;
+    protected String type;
     public Employee(String name){
         this.name = name;
     }
@@ -14,5 +17,13 @@ abstract public class Employee {
         this.name = name;
     }
 
-    public abstract double wage();
+    public String getType() {
+        return type;
+    }
+
+    public String getWage() {
+        return String.format("$%.2f", wage);
+    }
+    
 }
+
