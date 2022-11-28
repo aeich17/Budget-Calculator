@@ -114,6 +114,9 @@ public class EmployeeController implements Initializable {
 
         }
         table.setItems(employeeList);
+        name.clear();
+        salaryWage.clear();
+        hours.clear();
     }
 
     public void removeEmployeeBtn() throws Exception {
