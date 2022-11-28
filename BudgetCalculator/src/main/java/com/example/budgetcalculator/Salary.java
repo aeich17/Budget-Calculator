@@ -1,10 +1,13 @@
-package com.example.businesscalculator;
+package com.example.budgetcalculator;
 
 public class Salary extends Employee {
+
     private double salary;
     public Salary(String name, double salary){
         super(name);
         this.salary = salary;
+        this.type = "Salary";
+        calculateWage();
     }
 
     public double getSalary() {
@@ -13,9 +16,11 @@ public class Salary extends Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+        calculateWage();
     }
 
-    public double wage() {
-        return this.salary/12;
+    private void calculateWage() {
+        wage = this.salary/12;
     }
+
 }

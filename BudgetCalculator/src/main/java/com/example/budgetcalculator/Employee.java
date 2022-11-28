@@ -26,4 +26,3 @@ abstract public class Employee {
     }
     
 }
-
