@@ -1,4 +1,4 @@
-package com.example.businesscalculator;
+package com.example.budgetcalculator;
 
 public class Hourly_Employee extends Employee{
     private double hours;
@@ -7,10 +7,24 @@ public class Hourly_Employee extends Employee{
         super(name);
         this.hours = hours;
         this.pay = pay;
+        this.type = "Hourly";
+        calculateWage();
     }
 
-    @Override
-    public double wage() {
-        return this.hours * this.pay;
+    public double getHours() {
+        return hours;
     }
+
+    public void setHours(double hours) {
+        this.hours = hours;
+        calculateWage();
+    }
+
+    private void calculateWage() {
+        wage = this.hours * this.pay;
+    }
+
+    // public String type() {
+    //     return "Hourly";
+    // }
 }
