@@ -3,12 +3,11 @@
 
 package com.example.budgetcalculator;
 
-
 public class Menu {
     public double userRevenue;
     public double userAfterTax;
 
-    public Menu(double userRevenue, double userTaxRate) {
+    public Menu(double userRevenue, double userAfterTax) {
         this.userAfterTax = userAfterTax;
         this.userRevenue = userRevenue;
     }
@@ -26,4 +25,5 @@ public class Menu {
         return userAfterTax;
     }
 }
+
 
