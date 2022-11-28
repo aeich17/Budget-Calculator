@@ -159,7 +159,7 @@
                         <Insets left="31.0" right="31.0" />
                      </GridPane.margin>
                   </TextField>
-                  <Button fx:id="addEmployee" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-color: #B9B9B9;" text="Add" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                  <Button fx:id="addEmployee" onAction="#addEmployeeBtn" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-color: #B9B9B9;" text="Add" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -167,7 +167,7 @@
                         <Insets bottom="3.0" left="15.0" right="15.0" top="3.0" />
                      </padding>
                   </Button>
-                  <Button fx:id="removeEmployee" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-color: #B9B9B9;" text="Remove" GridPane.rowIndex="4">
+                  <Button fx:id="removeEmployee" onAction="#removeEmployeeBtn" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-background-color: #B9B9B9;" text="Remove" GridPane.rowIndex="4">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -190,12 +190,12 @@
                   </TextField>
                </children>
             </GridPane>
-            <TableView prefHeight="200.0" prefWidth="200.0">
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
               <columns>
-                <TableColumn prefWidth="93.21725463867188" text="Name" />
-                <TableColumn prefWidth="87.78277587890625" text="Type" />
-                  <TableColumn prefWidth="45.24114990234375" text="Hours" />
-                  <TableColumn prefWidth="87.2589111328125" text="Wage/Salary" />
+                <TableColumn fx:id="nameColumn" prefWidth="93.21725463867188" text="Name" />
+                <TableColumn fx:id="typeColumn" prefWidth="87.78277587890625" text="Type" />
+                  <TableColumn fx:id="hoursColumn" prefWidth="45.24114990234375" text="Hours" />
+                  <TableColumn fx:id="wageColumn" prefWidth="87.2589111328125" text="Wage/Salary" />
               </columns>
             </TableView>
          </children>
